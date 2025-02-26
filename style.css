@@ -1,0 +1,191 @@
+.maindiv{
+     height: 100vh;
+     width: 100vw;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow-x: hidden;
+     z-index: -2;
+}
+.Profile{
+     width: 500px;
+     height: 500px;
+     /* background-color: white; */
+     position: relative;
+     background-color: black;
+     z-index: 1;
+}
+.firstCircle{
+     position:absolute;
+     /* position: relative; */
+     height: 90px;
+     width: 90px;
+     background-color: red;
+     background-image: linear-gradient(to bottom, rgb(154, 147, 147), rgb(171, 57, 57));
+     border-radius: 50%;
+     margin-top: 25px;
+     margin-left: 70px;
+     box-shadow: 0 0 100px #f9f6f6;
+     animation: cir1 5s infinite linear;
+     z-index: 5;
+     
+}
+
+.secondCircle{
+     position:absolute;
+     /* position: relative; */
+     height: 125px;
+     width: 125px;
+     background-color: blue;
+     border-radius: 50%;
+     margin-top: 370px;
+     margin-left: 350px;
+     z-index: 0;
+     background-image: linear-gradient(to bottom, rgb(130, 62, 232), rgb(58, 4, 119));;
+     box-shadow: 0 0 100px #7728d1;
+     animation: cir2 8s infinite linear;
+}
+.Photo{
+     position: absolute;
+     position: relative;
+     height: 300px;
+     width: 250px;
+     background-color:white;
+     margin-left: 130px;
+     margin-top: 110px;
+     opacity: .1;
+     border: 1px solid white;
+     border-radius: 7%;
+     box-shadow: 25px;
+     z-index: -11;
+}
+@keyframes cir1 {
+     0%   {top: 0px; left: 0px;}
+     25%  {top: 0px; left: 1px;}
+     50%  {top: 1px; left: 20px; }
+     75%  {top: 10px; left: 50px;}
+     100% {top: 0px; left: 0px;}
+ }
+ @keyframes cir2 {
+     0%   {top: 0px; left: 0px;}
+     25%  {top: 0px; left: 1px;}
+     50%  {top: 5px; left: 20px; }
+     75%  {top: 5px; left: 50px;}
+     100% {top: 0px; left: 0px;}
+ }
+ .ph{
+     height: 110px;
+     width: 110px;
+     display: flex;
+     margin-top: -270px;
+     margin-left: 200px;
+     border-radius: 100%;
+     overflow: hidden;
+     justify-content: center;
+     align-items: center;
+ }
+ #name{
+     color: #f9f6f6;
+     margin-left: 170px;
+     margin-top: 10px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bold;
+     font-size: 25px;
+     visibility:visible;
+ }
+ #pos{
+     color: white;
+     margin-left:195px ;
+     margin-top: 15px;
+     font-size: 12px;
+     visibility: visible;
+ }
+ .funct{
+     margin-top: 20px;
+     margin-left: 150px;
+     overflow: hidden;
+ }
+ .share,.follow{
+     color: white;
+     background-color: black;
+     border: 2px solid white;
+     height: 30px;
+ }
+ .time{
+     color: white;
+ }
+.time:hover{
+     color: red;
+}
+.share:hover,.follow:hover{
+     color: black;
+     background-color: white;
+}
+.shareProfile{
+     width:350px ;
+     height: 180px;
+     background-color: black;
+     border: 2px solid white;
+     border-radius: 7%;
+}
+.t{
+     display: flex;
+
+}
+.s{
+     color: white;
+     font-size: 25px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 15px;
+}
+.cancel{
+     color: white;
+     width: 10px;
+     height: 10px;
+     margin-left: 125px;
+     margin-top: 8px;
+}
+.line{
+     width: 310px;
+     height: 2px;
+     margin-left: 15px;
+     background-color: white;
+     margin-top: 10px;
+}
+.fac,.twi,.tel{
+     color: blue;
+     margin: 15px;
+     border: 1px solid blue;
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+     border-radius: 100%;
+}
+.fac,.twi,.tel,.insta,.whatsapp{
+     margin: 20px;
+     size: 20px;
+}
+.whatsapp{
+     border: 1px solid green;
+     border-radius: 100%;
+     padding: 5px;
+}
+.insta{
+     padding: 5px;
+     border: 1px solid red;
+     border-radius: 100%;
+}
+.app{
+     display: flex;
+}
+#shareProfile{
+     /* visibility: hidden; */
+      display:none; 
+     position: absolute;
+     border: 2px solid white;
+     opacity: 2;
+     /* margin-right: px; */
+     margin-top: 20px;
+     z-index: 5;
+}  
